@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Infinite Games</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='page.css') }}"
+    />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+            <img
+              src="static/img/logo.png"
+              id="logo"
+              width="90"
+              height="80"
+              alt="Unavailable"
+            />
+          </div>
+          <div class="two columns u-pull-right">
+            <ul>
+              <li class="submenu">
+                <img src="static/img/cart.jpg" id="img-cart" />
+                <div id="shopping-cart">
+                  <table id="cart-content" class="u-full-width">
+                    <thead>
+                      <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                  <p id="total-price">
+                    <strong> Total: </strong>
+                  </p>
+
+                  <a href="#" id="clear-cart" class="button u-full-width"
+                    >Clear Cart</a
+                  >
+                  <button class="addmargin button u-full-width">
+                    Checkout
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="display">
+      <div class="container">
+        <div class="row">
+          <div class="six columns">
+            <div class="display-content">
+              <h2>Welcome to our Video Game Site</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="games-list" class="container">
+      <h1 id="heading" class="heading">Video Games</h1>
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="static/img/1.png" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>Escape Island</h4>
+
+              <p class="price"><span class="u-pull-right">$59.99</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="1"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="static/img/2.png" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>S L A Y E R</h4>
+
+              <p class="price"><span class="u-pull-right">$89.99</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="2"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="static/img/3.png" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>White Noise</h4>
+
+              <p class="price"><span class="u-pull-right">$59.99</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="3"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="static/img/4.png" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>Farm Life</h4>
+
+              <p class="price"><span class="u-pull-right">$69.99</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="4"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="static/img/5.png" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>City Builder</h4>
+
+              <p class="price"><span class="u-pull-right">$49.99</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="5"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="static/img/6.png" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>Cat Run</h4>
+
+              <p class="price"><span class="u-pull-right">$39.99</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="6"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="static/img/7.jpg" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>KARDS</h4>
+
+              <p class="price"><span class="u-pull-right">$29.99</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="7"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="static/img/8.png" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>Shark Attack</h4>
+
+              <p class="price"><span class="u-pull-right">$39.99</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="8"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="static/img/9.png" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>Intruder</h4>
+
+              <p class="price">
+                <span class="u-pull-right">$59.99</span>
+              </p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="9"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="static/img/10.png" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>Get Gun</h4>
+
+              <p class="price"><span class="u-pull-right">$59.99</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="10"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="static/img/11.png" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>Zombie Land</h4>
+
+              <p class="price"><span class="u-pull-right">$79.99</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="11"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="static/img/12.png" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>Helicopter Simulator</h4>
+
+              <p class="price"><span class="u-pull-right">$89.99</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="12"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+    </div>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+            <nav id="primary" class="menu">
+              <a href="{{ url_for('main.ContactUs')}}">Contact Us</a>
+              <a href="{{ url_for('main.Help')}}">Help</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{url_for('static', filename='app.js')}}"></script>
+  </body>
+</html>
